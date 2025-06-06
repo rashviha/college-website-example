@@ -6,6 +6,32 @@
   <title>Contact - KG College of Arts and Science</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<style>
+  footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #002244;
+  text-align: center;
+  color: #ffffff; /* adjust to your footer text color */
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* subtle shadow to separate footer from content */
+}
+ button {
+      padding: 12px 25px;
+      background-color: #0077cc; /* example main color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+</style>
 <body>
   <header>
     <h1>KG College of Arts and Science</h1>
@@ -24,11 +50,11 @@
     <section>
       <h2>Get in Touch</h2>
       <p>Got questions? Want a campus tour? Or just wanna say hi? Drop us a message below.</p>
-      <form>
-        <input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;">
-        <input type="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;">
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;" />
+        <input type="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;" />
         <textarea placeholder="Your Message" required style="width:100%; padding:10px; margin:10px 0; height:120px;"></textarea>
-        <button type="submit" style="padding:10px 20px; background:var(--main); color:white; border:none;">Send Message</button>
+         <button type="submit">Send Message</button>
       </form>
     </section>
   </div>
